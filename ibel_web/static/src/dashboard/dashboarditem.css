@@ -1,0 +1,25 @@
+.dashboard-item {
+    margin: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.card-body {
+    background-color: #fff; /* Arrière-plan blanc pour une lecture facile */
+    color: #333; /* Couleur de texte foncée pour un contraste élevé */
+    padding: 1.5rem; /* Espacement intérieur pour éviter que le texte ne touche les bords */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet de profondeur */
+    border-radius: 0.5rem; /* Bords arrondis pour une esthétique douce */
+    margin-bottom: 1rem; /* Marge en bas pour séparer les cartes lorsqu'elles sont empilées */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition douce pour les interactions */
+}
+
+.card-body:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+}

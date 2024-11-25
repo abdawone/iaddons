@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ibel_web.ibel_dashboard" owl="1">
+        <div class="vh-100 overflow-auto bg-muted">
+            <div class="row m-3">
+                <div>
+                    <div class="row">
+                        <div class="col m-0 p-0">
+                            <div class="shadow-sm border m-2 p-4 bg-white">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h1 class="text-primary fw-bold"><t t-esc="props.titre"/></h1>
+                                    <div>
+                                        <t t-slot="select"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <t t-slot="kpis"/>
+                        <t t-slot="graphics"/>
+                    </div>               
+                </div>              
+            </div>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ibel_web.ibelselect" owl="1"> 
+        <select class="form-select" t-model="state.selected" t-on-change="onChange">
+            <option value="">Select Period</option>
+            <t t-foreach="props.options" t-as="option" t-key="option.value">
+                <option t-att-value="option.value" t-att-selected="option.value === props.selected ? 'selected' : undefined">
+                    <t t-esc="option.label"/>
+                </option>
+            </t>
+        </select>
+    </t>
+</templates>
